@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS And JS code Editor</title>
+    <link rel="stylesheet" href="./app.css">
+    <script src="https://kit.fontawesome.com/d926da7b6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="inputs col-6">
+            <div class="input-field">
+                <label for="html"><i class="fa-brands fa-html5"></i>HTML</label>
+                <textarea  id="html" cols="30" onkeyup="run()" rows="10"></textarea>
+            </div>
+            <div class="input-field">
+                <label for="css"><i class="fa-brands fa-css3-alt"></i>CSS</label>
+                <textarea  id="css" cols="30" onkeyup="run()" rows="10"></textarea>
+            </div>
+            <div class="input-field">
+                <label for="js"><i class="fa-brands fa-square-js"></i>JS</label>
+                <textarea  id="js" cols="30" onkeyup="run()" rows="10"></textarea>
+            </div>
+        </div>
+
+        <div class="output col-6">
+            <label for="output">output</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
